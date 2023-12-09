@@ -42,7 +42,7 @@ import { FooterComponent } from './footer/footer.component';
     SpeakerComponent,
     ListMouseComponent,
     MouseComponent,
-    FooterComponent
+    FooterComponent,
   ],
   imports: [
     BrowserModule,
