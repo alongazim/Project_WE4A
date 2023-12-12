@@ -13,7 +13,7 @@
     width: 100%; /* Rendi le immagini larghe al massimo possibile */
     height: 100%; /* Rendi le immagini alte al massimo possibile */
     object-fit: scale-down; /* Copri completamente l'area dell'elemento contenitore */
-    object-position:  ; /* Centra l'immagine sia orizzontalmente che verticalmente */
+    object-position: center; /* Centra l'immagine sia orizzontalmente che verticalmente */
     border-radius: 30px; /* Bordo arrotondato per le immagini */
 }
 /* Pulsanti di controllo del carosello */

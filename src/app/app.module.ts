@@ -21,6 +21,7 @@ import { SpeakerComponent } from './speaker/speaker.component';
 import { ListMouseComponent } from './list-mouse/list-mouse.component';
 import { MouseComponent } from './mouse/mouse.component';
 import { FooterComponent } from './footer/footer.component';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [
@@ -43,6 +44,7 @@ import { FooterComponent } from './footer/footer.component';
     ListMouseComponent,
     MouseComponent,
     FooterComponent,
+    LoginComponent,
   ],
   imports: [
     BrowserModule,
