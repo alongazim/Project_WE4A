@@ -22,6 +22,7 @@ import { ListMouseComponent } from './list-mouse/list-mouse.component';
 import { MouseComponent } from './mouse/mouse.component';
 import { FooterComponent } from './footer/footer.component';
 import { LoginComponent } from './login/login.component';
+import { RegistrationComponent } from './registration/registration.component';
 
 @NgModule({
   declarations: [
@@ -45,6 +46,7 @@ import { LoginComponent } from './login/login.component';
     MouseComponent,
     FooterComponent,
     LoginComponent,
+    RegistrationComponent,
   ],
   imports: [
     BrowserModule,
