@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Product } from 'src/classes/Product';
+import { ProductService } from '../product.service';
 
 @Component({
   selector: 'app-list-keyboard',
@@ -7,9 +9,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ListKeyboardComponent implements OnInit {
 
-  constructor() { }
+  ProductArray! : Product[];
+
+  constructor(
+    public prdService: ProductService
+  ) { }
 
   ngOnInit(): void {
+    this.ProductArray = this.prdService.getKeyboards();
   }
+
 
 }

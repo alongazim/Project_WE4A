@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { Product } from 'src/classes/Product';
 
 @Component({
   selector: 'app-keyboard',
@@ -6,6 +7,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./keyboard.component.css']
 })
 export class KeyboardComponent implements OnInit {
+
+  @Input() product!:  Product;
+  @Input() product_index!: number;
 
   constructor() { }
 

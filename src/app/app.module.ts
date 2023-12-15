@@ -21,6 +21,7 @@ import { SpeakerComponent } from './speaker/speaker.component';
 import { ListMouseComponent } from './list-mouse/list-mouse.component';
 import { MouseComponent } from './mouse/mouse.component';
 import { FooterComponent } from './footer/footer.component';
+import { ProductService } from './product.service';
 
 @NgModule({
   declarations: [
@@ -48,7 +49,9 @@ import { FooterComponent } from './footer/footer.component';
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [
+    ProductService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
