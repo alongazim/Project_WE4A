@@ -22,6 +22,9 @@ import { ListMouseComponent } from './list-mouse/list-mouse.component';
 import { MouseComponent } from './mouse/mouse.component';
 import { FooterComponent } from './footer/footer.component';
 import { ProductService } from './product.service';
+import { LoginComponent } from './login/login.component';
+import { RegistrationComponent } from './registration/registration.component';
+
 
 @NgModule({
   declarations: [
@@ -43,7 +46,9 @@ import { ProductService } from './product.service';
     SpeakerComponent,
     ListMouseComponent,
     MouseComponent,
-    FooterComponent
+    FooterComponent,
+    LoginComponent,
+    RegistrationComponent,
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,16 @@
+.gradient-custom {
+    /* fallback for old browsers */
+        background: darkkhaki;
+    }
+
+.form-outline{
+    font-size: 30px;
+}
+
+.small{
+    font-size: 24px;
+}
+
+.mb-0{
+    font-size: 24px;
+}

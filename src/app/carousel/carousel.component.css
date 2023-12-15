@@ -1,0 +1,65 @@
+/* Cornice attorno al carosello con spigoli arrotondati */
+#carouselExampleDark {
+    max-width: 600px; /* Imposta la larghezza massima del carosello */
+    max-height: 300px;
+    margin: auto; /* Centra il carosello orizzontalmente */
+    overflow: hidden; /* Nasconde le parti delle immagini che superano la larghezza massima */
+    border-radius: 30px; /* Spigoli arrotondati per la cornice */
+    border: 2px solid #fff; /* Colore e spessore della cornice */
+}
+
+/* Immagini nel carosello */
+.carousel-item img {
+    width: 100%; /* Rendi le immagini larghe al massimo possibile */
+    height: 100%; /* Rendi le immagini alte al massimo possibile */
+    object-fit: scale-down; /* Copri completamente l'area dell'elemento contenitore */
+    object-position: center; /* Centra l'immagine sia orizzontalmente che verticalmente */
+    border-radius: 30px; /* Bordo arrotondato per le immagini */
+}
+/* Pulsanti di controllo del carosello */
+.carousel-control-prev, .carousel-control-next {
+    width: 5%; /* Larghezza dei pulsanti in base alla larghezza del carosello */
+    height: 100%; /* Altezza al massimo possibile */
+    background-color: rgba(72, 11, 11, 0.5); /* Colore di sfondo con trasparenza */
+    border-radius: 0; /* Rimuovi il bordo arrotondato */
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    font-size: 24px; /* Dimensione dell'icona */
+    color: #fff; /* Colore dell'icona */
+}
+
+/* Indicatori del carosello (pallini) */
+.carousel-indicators {
+    bottom: 10px; /* Posizione in basso con spaziatura dal fondo */
+    list-style: none; /* Rimuovi la lista predefinita degli indicatori */
+    text-align: center; /* Allinea gli indicatori al centro */
+}
+
+/* Stile attivo per gli indicatori */
+.carousel-indicators .active {
+    background-color: #007bff; /* Colore di sfondo per l'indicatore attivo */
+    width: 20px; /* Larghezza dell'indicatore attivo */
+    height: 6px; /* Altezza dell'indicatore attivo */
+    margin: 0 5px; /* Spaziatura tra gli indicatori */
+    border-radius: 5px; /* Bordo arrotondato per l'indicatore attivo */
+}
+
+/* Stile per gli indicatori non attivi */
+.carousel-indicators li {
+    background-color: #ccc; /* Colore di sfondo per gli indicatori non attivi */
+    width: 12px; /* Larghezza degli indicatori non attivi */
+    height: 6px; /* Altezza degli indicatori non attivi */
+    margin: 0 5px; /* Spaziatura tra gli indicatori */
+    border-radius: 5px; /* Bordo arrotondato per gli indicatori non attivi */
+    cursor: pointer; /* Cambia il cursore quando si passa sopra gli indicatori */
+}
+
+/* Stile per la didascalia del carosello */
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.7); /* Colore di sfondo con trasparenza */
+    border-radius: 8px; /* Bordo arrotondato per la didascalia */
+    padding: 10px; /* Spaziatura interna della didascalia */
+    bottom: 0; /* Posizione della didascalia in basso */
+    width: 100%; /* Larghezza al massimo possibile */
+}
