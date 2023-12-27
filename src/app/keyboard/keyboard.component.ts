@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { Router } from '@angular/router';
 import { Product } from 'src/classes/Product';
 
 @Component({
@@ -11,9 +12,13 @@ export class KeyboardComponent implements OnInit {
   @Input() product!:  Product;
   @Input() product_index!: number;
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit(): void {
+  }
+
+  readMore() {
+    this.router.navigate(['/keyboard', this.product_index]);
   }
 
 }

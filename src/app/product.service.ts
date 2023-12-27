@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import { Observable } from 'rxjs';
 import { Product } from 'src/classes/Product';
 
 @Injectable({
@@ -19,6 +20,12 @@ export class ProductService {
     this.ProductArray.push(new Product(4, 'Backlit Gaming Keypad', 'Programmable backlit gaming keypad for MMO and MOBA games', 69.99, 'BrandN', 'Keyboard', 'VendorN', 15, 'gaming_keypad.jpg'));
 
     return this.ProductArray;
+  }
+
+  getKeyboardById(id: number): Product | undefined {
+    return this.ProductArray.find(el => {
+      return el.id_product === id;
+    });
   }
 
   getLaptops() {

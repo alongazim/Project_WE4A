@@ -1,0 +1,19 @@
+this.ProductArray.push(new Product(1, 'Mechanical Gaming Keyboard', 'RGB backlit mechanical gaming keyboard with customizable keys', 129.99, 'BrandK', 'Keyboard', 'VendorK', 20, 'mechanical_keyboard.jpg'));
+
+<div class="product">
+    
+    
+    <img src="{{product?.image}}" class="card-img-top" style="height: 18rem;">
+ 
+      <h5 class="card-title">Title: {{product?.name_product}}</h5>
+      <p class="card-text text-muted">{{product?.description}}</p>
+    </div>
+    <ul class="list-group list-group-flush">
+       <h3 class="list-group-item">Price: ${{product?.price}}</h3> 
+       <h3>{{product?.brand}}</h3>
+       <h3>{{product?.category}}</h3>
+       <h3>{{product?.vendor}}</h3>
+       <h3>{{product?.stock_qty}}</h3>
+
+ 
+

@@ -12,7 +12,7 @@
       <li class="list-group-item" *ngIf="product.price> 0; then thenBlock else elseBlock"></li>
     </ul>
     <div class="card-body">
-      <a href="#" class="btn btn-primary mx-auto" >Go somewhere</a>
+      <a (click)="readMore()" class="btn btn-primary mx-auto" >Read More</a>
     </div>
   </div>
 

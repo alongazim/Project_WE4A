@@ -1,0 +1,51 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "vendors": [
+    {
+      "nameVendor": "Antonino",
+      "surnameVendor": "Trifirò",
+      "address": "Via Santa Liberata 33",
+      "email": "antolavoro3@gmail.com",
+      "password": "123456",
+      "usernameVendor": "sblaker",
+      "brandName": "apple",
+      "id": 1
+    },
+    {
+      "nameVendor": "erika",
+      "surnameVendor": "Londi",
+      "address": "Via Bologna",
+      "email": "antolavoro3@gmail.com",
+      "password": "123456",
+      "usernameVendor": "sblaker",
+      "brandName": "apple",
+      "id": 2
+    },
+    {
+      "nameVendor": "SALVATORE",
+      "surnameVendor": "MASCILLARO",
+      "address": "2 RUE ERNEST DUVILLARD",
+      "email": "antolavoro3@gmail.com",
+      "password": "",
+      "usernameVendor": "",
+      "brandName": "Logitech",
+      "id": 3
+    }
+  ]
+}

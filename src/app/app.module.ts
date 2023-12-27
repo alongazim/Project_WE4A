@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
@@ -24,6 +24,9 @@ import { FooterComponent } from './footer/footer.component';
 import { ProductService } from './product.service';
 import { LoginComponent } from './login/login.component';
 import { RegistrationComponent } from './registration/registration.component';
+import { HomeComponent } from './home/home.component';
+import { FormsModule } from '@angular/forms';
+import { CardComponent } from './card/card.component';
 
 
 @NgModule({
@@ -49,13 +52,18 @@ import { RegistrationComponent } from './registration/registration.component';
     FooterComponent,
     LoginComponent,
     RegistrationComponent,
+    HomeComponent,
+    CardComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    HttpClientModule
   ],
   providers: [
-    ProductService
+    ProductService,
+    HttpClientModule
   ],
   bootstrap: [AppComponent]
 })
