@@ -46,6 +46,103 @@
       "usernameVendor": "",
       "brandName": "Logitech",
       "id": 3
+    },
+    {
+      "nameVendor": "Antonino",
+      "surnameVendor": "Trifirò",
+      "address": "",
+      "email": "antonino.trifiro01@community.unipa.it",
+      "password": "123456",
+      "usernameVendor": "",
+      "brandName": "ssss",
+      "id": 4
+    },
+    {
+      "nameVendor": "test1",
+      "surnameVendor": "test1",
+      "address": "test1",
+      "email": "test1",
+      "password": "test1",
+      "usernameVendor": "test1",
+      "brandName": "test1",
+      "id": 5
+    },
+    {
+      "nameVendor": "test2",
+      "surnameVendor": "test2",
+      "address": "test2",
+      "email": "test2",
+      "password": "test2",
+      "usernameVendor": "test2",
+      "brandName": "test2",
+      "id": 6
+    },
+    {
+      "nameVendor": "test3",
+      "surnameVendor": "test3",
+      "address": "test3",
+      "email": "test3",
+      "password": "test3",
+      "usernameVendor": "test3",
+      "brandName": "test",
+      "id": 7
+    }
+  ],
+  "login": [
+    {
+      "id": 1
+    },
+    {
+      "id": 2
+    },
+    {
+      "id": 3
+    },
+    {
+      "id": 4
+    },
+    {
+      "email": "antonino.trifiro01@community.unipa.it",
+      "password": "123456",
+      "id": 5
+    }
+  ],
+  "products": [
+    {
+      "id_product": 0,
+      "name_product": "prdotto1",
+      "description": "12345",
+      "price": 0,
+      "brand": "",
+      "category": "",
+      "vendor": "test2",
+      "stock_qty": 0,
+      "image": "./assets/image/",
+      "id": 1
+    },
+    {
+      "id_product": 0,
+      "name_product": "prodott3",
+      "description": "fatto da test2",
+      "price": 0,
+      "brand": "",
+      "category": "",
+      "vendor": "test2",
+      "stock_qty": 0,
+      "image": "./assets/image/",
+      "id": 2
+    },
+    {
+      "id_product": 0,
+      "name_product": "prodott4",
+      "description": "prodott4",
+      "price": 3,
+      "brand": "",
+      "category": "",
+      "vendor": "test3",
+      "stock_qty": 0,
+      "image": "./assets/image/",
+      "id": 3
     }
   ]
 }

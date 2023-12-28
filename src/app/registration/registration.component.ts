@@ -13,12 +13,14 @@ import { HttpClient } from '@angular/common/http';
 })
 export class RegistrationComponent  implements OnInit{
   vendor:Vendor=new Vendor("","","","","","","");
+  message:boolean=false;
   
   constructor(private vendorService: VendorServiceService,private router:Router) {}
 
   submit() {
     this.vendorService.addVendor(this.vendor).subscribe(
       (response) => {
+        this.message=true;
         console.log('Seller data successfully saved:', response);
         this.router.navigate(['login-form']);
       },

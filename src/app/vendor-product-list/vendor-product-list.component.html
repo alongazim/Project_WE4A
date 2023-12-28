@@ -1,0 +1,5 @@
+<div class="container-fluid" >
+    <div class="row row-cols-auto justify-content-center">
+        <app-product *ngFor="let ProductVar of vendorProducts; let i = index" [product]="ProductVar" [product_index]="i+1"> </app-product>
+    </div>
+</div>

@@ -1,0 +1,27 @@
+<div class="card m-1" style="width: 18rem;">
+    <div class="card-header">
+      Product: {{product_index}}
+    </div>
+    <img src="{{product.image}}" class="card-img-top" style="height: 18rem;">
+    <div class="card-body">
+      <h5 class="card-title">Title: {{product.name_product}}</h5>
+      <p class="card-text text-muted">{{product.description}}</p>
+    </div>
+    <ul class="list-group list-group-flush">
+      <!-- <li class="list-group-item">Price: ${{product.prix}}</li> -->
+      <li class="list-group-item" *ngIf="product.price> 0; then thenBlock else elseBlock"></li>
+    </ul>
+    <h2 class="category" >{{product.category}}</h2>
+    <h2 class="brand" >{{product.brand}}</h2>
+    <h2 class="stock-qty" >{{product.stock_qty}}</h2>
+
+
+  </div>
+
+  <ng-template #thenBlock>
+    <li class="list-group-item" [ngClass]="{'text-center': true, 'background-yellow' : product.price< 50 , 'background-red' : product.price > 50 }">Price: ${{product.price}}</li>
+  </ng-template>
+
+  <ng-template #elseBlock>
+    <li class="list-group-item" [ngClass]="['background-green text-center']">Price: Free</li>
+  </ng-template>

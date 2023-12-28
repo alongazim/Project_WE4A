@@ -27,6 +27,11 @@ import { RegistrationComponent } from './registration/registration.component';
 import { HomeComponent } from './home/home.component';
 import { FormsModule } from '@angular/forms';
 import { CardComponent } from './card/card.component';
+import { CookieService } from 'ngx-cookie-service';
+import { HomeVendorComponent } from './home-vendor/home-vendor.component';
+import { AddProductComponent } from './add-product/add-product.component';
+import { ProductComponent } from './product/product.component';
+import { VendorProductListComponent } from './vendor-product-list/vendor-product-list.component';
 
 
 @NgModule({
@@ -54,6 +59,10 @@ import { CardComponent } from './card/card.component';
     RegistrationComponent,
     HomeComponent,
     CardComponent,
+    HomeVendorComponent,
+    AddProductComponent,
+    ProductComponent,
+    VendorProductListComponent,
   ],
   imports: [
     BrowserModule,
@@ -63,7 +72,8 @@ import { CardComponent } from './card/card.component';
   ],
   providers: [
     ProductService,
-    HttpClientModule
+    HttpClientModule,
+    CookieService
   ],
   bootstrap: [AppComponent]
 })
