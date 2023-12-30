@@ -32,6 +32,7 @@ import { HomeVendorComponent } from './home-vendor/home-vendor.component';
 import { AddProductComponent } from './add-product/add-product.component';
 import { ProductComponent } from './product/product.component';
 import { VendorProductListComponent } from './vendor-product-list/vendor-product-list.component';
+import { LoginButtonComponent } from './login-button/login-button.component';
 
 
 @NgModule({
@@ -63,6 +64,7 @@ import { VendorProductListComponent } from './vendor-product-list/vendor-product
     AddProductComponent,
     ProductComponent,
     VendorProductListComponent,
+    LoginButtonComponent,
   ],
   imports: [
     BrowserModule,
