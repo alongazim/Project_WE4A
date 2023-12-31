@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-// import { CookieService } from 'ngx-cookie-service';
+import { CookieService } from 'ngx-cookie-service';
 
 @Component({
   selector: 'app-header',
@@ -8,17 +8,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
   
-  // constructor(private cookieService: CookieService) { }
+  constructor(private cookieService: CookieService) { }
 
-  // // Use a getter method to dynamically get the userCookiePresent value
-  // get userCookiePresent(): boolean {
-  //   return this.cookieService.check("user");
-  // }
+  // Use a getter method to dynamically get the userCookiePresent value
+  get userCookiePresent(): boolean {
+    return this.cookieService.check("user");
+  }
 
-  // logout(){
-  //   this.cookieService.delete("user");
-  //   this.cookieService.delete("username")
-  // }
+  logout(){
+    this.cookieService.delete("user");
+    this.cookieService.delete("username")
+  }
   ngOnInit(): void {
   }
 
