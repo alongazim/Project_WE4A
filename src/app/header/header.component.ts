@@ -15,10 +15,6 @@ export class HeaderComponent implements OnInit {
     return this.cookieService.check("user");
   }
 
-  logout(){
-    this.cookieService.delete("user");
-    this.cookieService.delete("username")
-  }
   ngOnInit(): void {
   }
 
