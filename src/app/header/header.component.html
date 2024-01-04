@@ -35,6 +35,12 @@
                 <a class="btn btn-outline-primary my-2 my-sm-0" routerLink="login-form" type="button">Login</a>
             </li>
         </ul>
+
+        <ul class="navbar-nav justify-content-end">
+            <li class="nav-item" *ngIf="userCookiePresent">
+                <a class="btn btn-outline-primary my-2 my-sm-0" (click)="logout()" routerLink="" type="button">Logout</a>
+            </li>
+        </ul>
   
         <form class="form-inline my-2 my-lg-0">
             <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">

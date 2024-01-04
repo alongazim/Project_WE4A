@@ -86,6 +86,16 @@
       "usernameVendor": "test3",
       "brandName": "test",
       "id": 7
+    },
+    {
+      "nameVendor": "test5",
+      "surnameVendor": "test5",
+      "address": "ggg",
+      "email": "ggg",
+      "password": "test5",
+      "usernameVendor": "test5",
+      "brandName": "test5",
+      "id": 8
     }
   ],
   "login": [
