@@ -1,1 +1,5 @@
-<p>list-monitor works!</p>
+<div class="container-fluid" >
+    <div class="row row-cols-auto justify-content-center">
+        <app-monitor *ngFor="let ProductVar of ProductArray; let i = index" [product]="ProductVar" [product_index]="i+1"></app-monitor>
+    </div>
+</div>
