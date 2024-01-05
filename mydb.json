@@ -96,6 +96,16 @@
       "usernameVendor": "test5",
       "brandName": "test5",
       "id": 8
+    },
+    {
+      "nameVendor": "",
+      "surnameVendor": "",
+      "address": "",
+      "email": "",
+      "password": "test3",
+      "usernameVendor": "test6",
+      "brandName": "test6",
+      "id": 9
     }
   ],
   "login": [

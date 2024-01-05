@@ -15,6 +15,8 @@ export class RegistrationComponent  implements OnInit{
   vendor:Vendor=new Vendor("","","","","","","");
   message:boolean=false;
   
+  showCompanyName: boolean = false;
+  
   constructor(private vendorService: VendorServiceService,private router:Router) {}
 
   submit() {
@@ -34,6 +36,7 @@ export class RegistrationComponent  implements OnInit{
  
 
   ngOnInit(): void {
+    
   } 
 
 }
