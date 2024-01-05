@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Product } from 'src/classes/Product';
+import { ProductService } from '../product.service';
 
 @Component({
   selector: 'app-list-smartphone',
@@ -7,9 +9,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ListSmartphoneComponent implements OnInit {
 
-  constructor() { }
+  ProductArray! : Product[];
+
+  constructor(
+    public prdService: ProductService
+  ) { 
+    this.ProductArray = this.prdService.getSmartphone();
+  }
 
   ngOnInit(): void {
+    
   }
 
 }
